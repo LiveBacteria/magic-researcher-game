@@ -1,16 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,15 +14,142 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+.Signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+#centerMe {
+  text-align: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game {
+  min-width: 500px;
+  width: 42vw;
+  height: 58vh;
+}
+
+.gameBackground {
+  background-image: url("./resources/game_assets/backgrounds/Battleground3.png");
+  width: 42vw;
+  height: 58vh;
+  min-width: 500px;
+  background-size: 42vw 58vh;
+  background-repeat:round;
+}
+
+.UI {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 500px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.gameArt {
+  /* display: flex; */
+  /* flex-direction: row; */
+  padding: 5px;
+}
+
+.castTextField {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.characterSprite {
+  background-image: url("./resources/game_assets/character/character.png");
+  background-repeat: no-repeat;
+  background-size: 65vh;
+  /* z-index: 2; */
+  /* width: 75%; */
+  /* height: 75%; */
+  /* position: absolute; */
+  /* top: 30%; */
+  /* right: 35%; */
+  pointer-events: none;
+  user-select: none;
+  flex-grow: 3;
+}
+
+.image {
+  /* pointer-events: none; */
+  user-select: none;
+  height: 75%;
+}
+
+.image2 {
+  /* background-image: url("./resources/game_assets/ui/11c-blank.gif"); */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-self:right; */
+  /* width: 42vw; */
+  /* position: absolute;
+  right: 0;
+  top: 0;
+  height: 8vh;
+  min-width: 256px;
+  background-size: 8vh;
+  background-repeat: no-repeat; */
+}
+
+.gameBoard {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.spellSheet {
+  /* display: flex; */
+  /* justify-content: right; */
+  /* align-items: flex-end; */
+  z-index: 3;
+  /* width: 35%; */
+  /* height: 100%; */
+  position: relative;
+  /* top: 10%; */
+  /* right: -40%; */
+}
+
+@keyframes slideIn {
+
+}
+
+@keyframes slideOut {
+
+}
+
+.containerDiv {
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.contentDiv {
+  height: 100%;
+  /* margin-top: auto; */
 }
